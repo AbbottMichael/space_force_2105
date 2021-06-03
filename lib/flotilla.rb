@@ -8,4 +8,8 @@ class Flotilla
     @personnel = []
     @ships     = []
   end
+
+  def add_ship(spacecraft)
+    @ships << spacecraft
+  end
 end
