@@ -18,4 +18,13 @@ RSpec.describe Person do
       expect(@kathy.specialties).to eq([])
     end
   end
+
+  describe 'methods' do
+    it 'adds specialties' do
+      @kathy.add_specialty(:astrophysics)
+      @kathy.add_specialty(:quantum_mechanics)
+
+      expect(@kathy.specialties).to eq([:astrophysics, :quantum_mechanics])
+    end
+  end
 end
