@@ -16,4 +16,16 @@ class Flotilla
   def add_personnel(person)
     @personnel << person
   end
+
+  def recommend_personnel(ship)
+    require'pry';binding.pry
+  #   specialty_list = []
+  #   ships.each do |ship|
+  #     ship.requirements.each do |specialty|
+  #       specialty_list << specialty
+  #     end
+  #   end
+  #   specialty_list2 = []
+  #   ships.each do |ship|
+  end
 end

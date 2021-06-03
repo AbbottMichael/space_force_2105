@@ -59,7 +59,8 @@ RSpec.describe Flotilla do
       @seventh_flotilla.add_personnel(@polly)
       @seventh_flotilla.add_personnel(@rover)
       @seventh_flotilla.add_personnel(@sampson)
-
+      @seventh_flotilla.add_ship(@daedalus)
+      # require'pry';binding.pry
       expect(@seventh_flotilla.recommend_personnel(@daedalus)).to eq([@kathy, @sampson])
     end
   end
