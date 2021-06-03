@@ -7,9 +7,15 @@ RSpec.describe Person do
   end
 
   describe 'instantiation' do
-    
+
     it 'exists' do
       expect(@kathy).to be_a(Person)
+    end
+
+    it 'has readable attributes' do
+      expect(@kathy.name).to eq('Kathy Chan')
+      expect(@kathy.experience).to eq(10)
+      expect(@kathy.specialties).to eq([])
     end
   end
 end
